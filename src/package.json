@@ -1,0 +1,16 @@
+{
+  "name": "graphql-server",
+  "version": "1.0.0",
+  "description": "Graphql Server Example",
+  "main": "server.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Namae Conde",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.13",
+    "ts-node": "^10.3.0",
+    "typescript": "^4.4.4"
+  }
+}
