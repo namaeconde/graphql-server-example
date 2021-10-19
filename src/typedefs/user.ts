@@ -1,6 +1,6 @@
 import { gql } from 'apollo-server-express';
 
-export const TypeDefs = gql `
+export default gql `
   type User {
     name: String
   }

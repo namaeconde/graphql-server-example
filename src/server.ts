@@ -3,7 +3,14 @@ import { ApolloServer } from "apollo-server-express";
 import { createServer } from "http";
 import compression from "compression";
 import cors from "cors";
-import { schema } from "./schema";
+import { makeExecutableSchema } from "graphql-tools";
+import typedefs from "./typedefs";
+import resolvers from "./resolvers";
+
+export const schema = makeExecutableSchema({
+  typeDefs: typedefs,
+  resolvers: resolvers,
+});
 
 (async function startApolloServer() {
   const PORT = process.env.PORT || 4001;
