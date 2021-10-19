@@ -26,6 +26,6 @@ export const schema = makeExecutableSchema({
   server.applyMiddleware({ app, path: "/graphql" });
   const httpServer = createServer(app);
   httpServer.listen({ port: PORT }, (): void =>
-    console.log(`🚀GraphQL-Server is running on http://localhost:4001/graphql`)
+    console.log(`🚀GraphQL-Server is running on http://localhost:${PORT}/graphql`)
   );
 })();
