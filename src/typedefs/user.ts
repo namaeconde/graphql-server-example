@@ -5,6 +5,6 @@ export default gql `
     name: String
   }
   type Query {
-    getAllUsers: [User]
+    users: [User]
   }
 `
