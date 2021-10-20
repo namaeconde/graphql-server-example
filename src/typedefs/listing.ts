@@ -3,7 +3,11 @@ import { gql } from 'apollo-server-express';
 export default gql `
   type Listing {
     _id: ID!
-    name: String
+    name: String,
+    bedrooms: Int,
+    beds: Int,
+    bathrooms: Float,
+    amenities: [String]
   }
   type Query {
     listings(page: Int): [Listing],
